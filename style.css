@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    width: 90%;
+    height: 90vh;
+    background-color: #ffc0cb52;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: var(--mainpadding);
+}
+:root{
+    --mainpadding:40px;
+    --secondcolor: palevioletred;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: var(--mainpadding);
+    padding-right:var(--mainpadding) ;
+}
+header h1{
+    align-self: flex-start;
+    margin-right: auto;
+}
+header span:not(span:nth-of-type(4)){
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:var(--secondcolor) ;
+    margin-left:20px ;
+    align-self: center;
+}
+header span:nth-of-type(4){
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px dashed var(--secondcolor);
+    margin-left:20px ;
+    align-self: center;
+}
+.nav{
+    display: flex;
+    gap: 150px;
+    padding-left: 65px;
+    padding-right: var(--mainpadding);
+}
+.nav div{
+    width:250px;
+    display: flex;
+}
+.nav h3 {
+    align-self: flex-start;
+    margin-right: auto;
+}
+.nav span{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--secondcolor);
+    margin-left: 1px;
+    align-self: center;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .head {
+    display: flex;
+    justify-content: flex-end;
+}
+.content .head p {
+    align-self: flex-start;
+    margin-right: auto;
+    background-color: var(--secondcolor);
+    border-radius: 20px;
+    padding: 8px;
+    color: white;
+}
+.content .head span {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--secondcolor);
+    margin-left: 1px;
+    align-self: center;
+}
+.content div:not(.head,.foot){
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 3px 1px 10px 0px black;
+}
+.content div .foot{
+    position: relative;
+    bottom: -15px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.341);
+}
+.content div .foot p{
+    margin-right:30px ;
+}
+.content div .foot img{
+    margin-right: 5px;
+}
+.content div .foot span{
+    width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: var(--secondcolor);
+}
